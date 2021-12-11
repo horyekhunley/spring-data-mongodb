@@ -13,7 +13,7 @@ public class Course {
     private String name;
     private String description;
 
-    @DBRef
+    @DBRef(lazy = true)
     private Topic topic;
 
     public Topic getTopic() {
